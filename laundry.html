@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aplikasi Laundry</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Aplikasi Laundry</h1>
+
+    <form id="laundryForm">
+      <input type="text" id="nama" placeholder="Nama Pelanggan" required />
+      <input type="text" id="wa" placeholder="Nomor WhatsApp (08xxx)" required />
+      <input type="number" id="berat" placeholder="Berat Cucian (kg)" required />
+      <select id="layanan">
+        <option value="reguler">Reguler - Rp5000/kg</option>
+        <option value="express">Express - Rp8000/kg</option>
+      </select>
+      <button type="submit">Tambah & Kirim ke WhatsApp</button>
+    </form>
+
+    <h2>Daftar Pesanan</h2>
+    <ul id="pesananList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
